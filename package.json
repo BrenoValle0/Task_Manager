@@ -1,0 +1,23 @@
+{
+  "name": "task_manager",
+  "version": "1.0.0",
+  "description": "Task Manager",
+  "homepage": "https://github.com/BrenoValle0/Task_Manager#readme",
+  "bugs": {
+    "url": "https://github.com/BrenoValle0/Task_Manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrenoValle0/Task_Manager.git"
+  },
+  "license": "MIT",
+  "author": "Breno Valle de Aguiar 2023263",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^37.2.4"
+  }
+}
