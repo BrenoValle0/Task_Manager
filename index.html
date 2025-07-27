@@ -10,12 +10,46 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
+    <link rel="stylesheet" href="styles.css">
     <title>Task Manager</title>
   </head>
   <body>
     <h1>Task Manager</h1>
-    <p>👋</p>
-    <p id="info"></p>
+
+    <div class="controls">
+      <label for="filterSelect">Filter:</label>
+      <select id="filterSelect">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+        <option value="low">Low Priority</option>
+        <option value="medium">Medium Priority</option>
+        <option value="high">High Priority</option>
+      </select>
+
+      <label for="sortSelect">Sort by:</label>
+      <select id="sortSelect">
+        <option value="none">None</option>
+        <option value="title">Title (A–Z)</option>
+        <option value="dueDate">Due Date (Soonest)</option>
+        <option value="priority">Priority (High → Low)</option>
+      </select>
+    </div>
+
+
+    <div id="taskForm">
+      <input type="text" id="titleInput" placeholder="Title">
+      <input type="text" id="descInput" placeholder="Description">
+      <input type="date" id="dateInput">
+      <select id="priorityInput">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button id="addBtn">Add</button>
+    </div>
+    
+    <ul id="taskList"></ul>
   </body>
-  <script src="./renderer.js"></script>
+  <script src="./scripts.js"></script>
 </html>

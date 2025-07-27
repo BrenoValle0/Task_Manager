@@ -11,7 +11,7 @@
     "url": "git+https://github.com/BrenoValle0/Task_Manager.git"
   },
   "license": "MIT",
-  "author": "Breno Valle de Aguiar 2023263",
+  "author": "Breno Valle de Aguiar, student number: 2023263",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
